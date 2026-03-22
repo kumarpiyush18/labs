@@ -1,0 +1,97 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+.pnp
+.pnp.js
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+.build/
+.turbo/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ML / Jupyter Notebooks
+.ipynb_checkpoints/
+*.csv
+*.dat
+*.out
+*.log
+*.sqlite
+*.sqlite3
+*.db
+*.ckpt
+*.pt
+*.pth
+*.h5
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Turborepo
+.turbo
+
+# IDE and Editors
+.idea/
+*.swp
+*.swo
+
+# DSA Compiled Output (C++/Java)
+*.out
+*.exe
+*.o
+*.class
+*.dll
+*.so
+*.dylib
+a.out
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
