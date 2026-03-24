@@ -1,0 +1,7 @@
+{% macro staggered_text(text, class_name="") %}
+<span class="name-container {{ class_name }}">
+    {% for char in text %}
+    <span class="char" style="--i:{{ loop.index }}">{{ char if char != ' ' else '&nbsp;' | safe }}</span>
+    {% endfor %}
+</span>
+{% endmacro %}

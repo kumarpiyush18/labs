@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container" style="padding-top: 60px;">
+    <a href="{{ root_path|default('.') }}/blog.html" class="btn-link">&larr; Back to Blog</a>
+
+    <article class="glass-card" style="margin-top: 30px; padding: 40px;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 10px;">{{ post.title }}</h1>
+        <p style="color: var(--text-muted); margin-bottom: 30px;">
+            {{ post.date }} &middot;
+            {% for tag in post.tags %}
+            <span class="tag">{{ tag }}</span>
+            {% endfor %}
+        </p>
+
+        <div class="blog-content">
+            {{ post.html_content | safe }}
+        </div>
+    </article>
+</div>
+
+<style>
+    .blog-content {
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+
+    .blog-content h2 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: var(--text-color);
+    }
+
+    .blog-content p {
+        margin-bottom: 20px;
+        color: #cbd5e1;
+    }
+
+    .blog-content code {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+        color: var(--accent-color);
+    }
+
+    .blog-content pre {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+        margin-bottom: 20px;
+    }
+
+    .blog-content pre code {
+        background: none;
+        padding: 0;
+        color: #e2e8f0;
+    }
+</style>
+{% endblock %}

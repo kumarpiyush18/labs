@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumar's Portfolio</title>
+    <meta name="description" content="A showcase of my work and skills.">
+    <link rel="stylesheet" href="../static/css/style.css?v=3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+<span class="name-container ">
+    
+    <span class="char" style="--i:1">K</span>
+    
+    <span class="char" style="--i:2">u</span>
+    
+    <span class="char" style="--i:3">m</span>
+    
+    <span class="char" style="--i:4">a</span>
+    
+    <span class="char" style="--i:5">r</span>
+    
+</span>
+</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="../static/resume.pdf" target="_blank" class="btn-resume">Resume
+                        📄</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+<div class="container" style="padding-top: 60px;">
+    <a href="../blog.html" class="btn-link">&larr; Back to Blog</a>
+
+    <article class="glass-card" style="margin-top: 30px; padding: 40px;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Building a Portfolio with Python</h1>
+        <p style="color: var(--text-muted); margin-bottom: 30px;">
+            2025-11-23 &middot;
+            
+            <span class="tag">Python</span>
+            
+            <span class="tag">Web Dev</span>
+            
+            <span class="tag">Tutorial</span>
+            
+        </p>
+
+        <div class="blog-content">
+            <h1>Why Python?</h1>
+<p>I love Python. It's versatile, readable, and powerful. So when I decided to build my portfolio, I didn't want to reach for a heavy JS framework like Next.js or a complex CMS. I wanted something simple that I could control completely.</p>
+<h2>The Stack</h2>
+<ul>
+<li><strong>Python</strong>: The core logic.</li>
+<li><strong>Jinja2</strong>: For templating HTML.</li>
+<li><strong>Markdown</strong>: For writing content like this.</li>
+<li><strong>GitHub Pages</strong>: For hosting.</li>
+</ul>
+<h2>How it works</h2>
+<p>I wrote a simple <code>build.py</code> script that reads my data and templates, renders them, and spits out static HTML files. It's fast, efficient, and free to host!</p>
+<pre class="codehilite"><code class="language-python">def build():
+    print(&quot;Building site...&quot;)
+    # ... magic happens here
+</code></pre>
+
+<p>Stay tuned for more updates!</p>
+        </div>
+    </article>
+</div>
+
+<style>
+    .blog-content {
+        line-height: 1.8;
+        font-size: 1.1rem;
+    }
+
+    .blog-content h2 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: var(--text-color);
+    }
+
+    .blog-content p {
+        margin-bottom: 20px;
+        color: #cbd5e1;
+    }
+
+    .blog-content code {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+        color: var(--accent-color);
+    }
+
+    .blog-content pre {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        border-radius: 8px;
+        overflow-x: auto;
+        margin-bottom: 20px;
+    }
+
+    .blog-content pre code {
+        background: none;
+        padding: 0;
+        color: #e2e8f0;
+    }
+</style>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Kumar. Built with Python & Jinja2.</p>
+        </div>
+    </footer>
+    <script src="../static/js/main.js"></script>
+</body>
+
+</html>

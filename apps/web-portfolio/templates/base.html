@@ -1,0 +1,43 @@
+{% from "macros.html" import staggered_text %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ config.title }}</title>
+    <meta name="description" content="{{ config.description }}">
+    <link rel="stylesheet" href="{{ root_path|default('.') }}/static/css/style.css?v=3">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">{{ staggered_text(config.author) }}</div>
+            <ul class="nav-links">
+                <li><a href="{{ root_path|default('.') }}/index.html#about">About</a></li>
+                <li><a href="{{ root_path|default('.') }}/index.html#projects">Projects</a></li>
+                <li><a href="{{ root_path|default('.') }}/blog.html">Blog</a></li>
+                <li><a href="{{ root_path|default('.') }}/index.html#contact">Contact</a></li>
+                <li><a href="{{ root_path|default('.') }}/static/resume.pdf" target="_blank" class="btn-resume">Resume
+                        📄</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 {{ config.author }}. Built with Python & Jinja2.</p>
+        </div>
+    </footer>
+    <script src="{{ root_path|default('.') }}/static/js/main.js"></script>
+</body>
+
+</html>

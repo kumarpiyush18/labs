@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="container" style="padding-top: 60px;">
+    <h1 class="headline animate-entry">Blog</h1>
+    <p class="subheadline animate-entry delay-1">Thoughts, tutorials, and updates.</p>
+
+    <div class="projects-grid animate-entry delay-2" style="margin-top: 40px;">
+        {% for post in posts %}
+        <div class="project-card glass-card">
+            <h3>{{ post.title }}</h3>
+            <p style="font-size: 0.9rem; color: var(--text-muted);">{{ post.date }}</p>
+            <p>{{ post.description }}</p>
+            <div class="tags">
+                {% for tag in post.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            <a href="{{ root_path|default('.') }}/posts/{{ post.slug }}.html" class="btn-link">Read Article &rarr;</a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
