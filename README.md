@@ -21,7 +21,6 @@ Run these from the root directory:
 - `make clean`: Cleans up `node_modules` across the mono-repo.
 
 ### Running Specific Applications
-- **Portfolio**: `make portfolio` (Runs `apps/web-portfolio` Next.js frontend).
 - **Quick Notes UI**: `make notes-ui` (Runs `apps/web-quick-notes` frontend).
 - **Notes API**: `make api-notes` (Runs `services/api-notes` Python FastAPI backend).
 

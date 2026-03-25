@@ -41,9 +41,6 @@ init-node:
 # FRONTEND APPS
 # ------------------------
 
-portfolio:
-	cd apps/web-portfolio && npm run dev
-
 notes-ui:
 	cd apps/web-quick-notes && npm run dev
 
@@ -76,7 +73,6 @@ help:
 	@echo "  make dev         - Run all apps (turbo)"
 	@echo "  make init-python project_name=<name> dir=<dir> - Initialize Python project"
 	@echo "  make init-node   dest=<path>                   - Initialize Node project"
-	@echo "  make portfolio   - Run portfolio app"
 	@echo "  make notes-ui    - Run notes frontend"
 	@echo "  make api-notes   - Run FastAPI backend"
 	@echo "  make clean       - Clean node_modules"
